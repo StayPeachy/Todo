@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('./grass.jpeg');
+}
+.list{
+    position: relative;
+    background: white;
+    width: 350px;
+}
+.list h2{
+    background: linear-gradient(135deg, #40E0D0, #7B68EE);
+    color: white;
+    padding: 10px 20px;
+    font-weight: 600;
+}
+.list ul{
+    position: relative;
+    padding: 20px;
+}
+.list ul li{
+    position: relative;
+    list-style: none;
+    padding: 15px 0;
+    border: 5px  lightcyan;
+}
+.list ul li:last-child{
+    border-bottom: none;
+}
+.list ul li label{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.list ul li label input{
+    visibility: hidden;
+    appearance: none;
+}
+.list  ul li label p{
+    position: absolute;
+}
+.list ul li label span{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.list ul li label span:before{
+    content: '';
+    position: absolute;
+    top: 5px;
+    width: 10px;
+    height: 5px;
+    border-left: 2px solid #FFF;
+    border-bottom: 2px solid #FFF;
+    transform: rotate(-40deg);
+}
+.list ul li label input:checked ~ p{
+    text-decoration: line-through;
+    color: #ccc;
+}
+.list ul li label input:checked ~ span{
+    background-color: #1E90FF;
+}
+li a{
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+
+}
+
